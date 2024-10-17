@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+
+
+<br />
+
+<h4>Admin Side</h4>
+<ul>
+    <li>
+        <a asp-area="Admin" asp-controller="Dashboard" asp-action="Dashboard">
+            Admin/Home/Dashboard
+        </a>
+    </li>
+
+    <li>
+        <a asp-area="Admin" asp-controller="EditEvent" asp-action="EditEvent">
+            Admin/Home/EditEvent
+        </a>
+    </li>
+
+
+    <li>
+        <a asp-area="Admin" asp-controller="EditList" asp-action="EditList">
+            Admin/Home/EditList
+        </a>
+    </li>
+
+    <li>
+        <a asp-area="Admin" asp-controller="Report" asp-action="Report">
+            Admin/Home/Report
+        </a>
+    </li>
+
+    <li>
+        <a asp-area="Admin" asp-controller="Users" asp-action="User">
+            Admin/Home/user
+        </a>
+    </li>
+
+
+</ul>
+
+
+<br />
+
+<h4>User Side</h4>
+<ul>
+    <li>
+        <a asp-area="User" asp-controller="LogIn" asp-action="Index">
+            User/LogIn/Index
+        </a>
+    </li>
+    <li>
+        <a asp-area="User" asp-controller="CreateAccount" asp-action="Index">
+            User/CreateAccount/Index
+        </a>
+    </li>
+    <li>
+        <a asp-area="User" asp-controller="Home" asp-action="Index">
+            User/Home/Index
+        </a>
+    </li>
+
+</ul>
